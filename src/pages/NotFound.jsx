@@ -1,9 +1,10 @@
 import {Link} from "react-router";
+import "./NotFound.scss";
 
 export default function NotFound() {
     return (
         <main>
-            <h1>404 — Page introuvable</h1>
+            <h1>404</h1>
             <p>Désolé, la page que vous cherchez n'existe pas.</p>
             <p>
                 <Link to="/">Retour à l'accueil</Link>
