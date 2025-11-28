@@ -1,14 +1,21 @@
+import { useEffect, useState } from "react";
 import "./Home.scss";
-import products from "../products.json";
 import Card from "../components/Card.jsx";
+import Banner from "../components/Banner.jsx";
+import bannerHome from "../assets/banner-home.webp";
 
 export default function Home() {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch("/products.json")
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, []);
+
     return (
         <main className="home">
-            <div className="home__banner">
-                <img src="../../src/assets/banner1.svg" alt="Chez vous, partout et ailleurs" className="home__banner__image" />
-                <h1 className="home__banner__text">Chez vous, partout et ailleurs</h1>
-            </div>
+            <Banner image={bannerHome} title="Chez vous, partout et ailleurs" />
             <div className="home__cards">
                 {products.map(product => (
                     <Card

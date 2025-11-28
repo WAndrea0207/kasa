@@ -1,8 +1,23 @@
-export default function About() {
+import "./about.scss";
+import Banner from "../components/Banner.jsx";
+import bannerAbout from "../assets/banner-about.webp";
+import Dropdown from "../components/Dropdown.jsx";
+
+export default function About() {   
     return (
-        <main>
-            <h1>À propos</h1>
-            <p>Bienvenue sur la page À propos — mettez ici votre texte.</p>
+        <main className="about">
+            <Banner image={bannerAbout}/>
+            <div className="about__dropdowns">
+                <Dropdown title="Fiabilité">
+                </Dropdown>
+                <Dropdown title="Respect">
+                </Dropdown>
+                <Dropdown title="Service">
+                </Dropdown>
+                <Dropdown title="Sécurité">
+                </Dropdown>
+            </div>
+            
         </main>
     );
-}
+}   
