@@ -41,7 +41,6 @@ const router = createBrowserRouter([
             { path: "", element: <Home /> },
             { path: "products/:id", element: <Product />, loader: productLoader },
             { path: "about", element: <About /> },
-            { path: "404", element: <NotFound /> },
             { path: "*", element: <NotFound /> }
         ],
     },

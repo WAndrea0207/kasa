@@ -1,0 +1,48 @@
+.card {
+ 
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  // Dégradé linéaire en bas de la carte
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%; // dégradé sur la moitié basse
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.41) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &__title {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;  
+    right: 150px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    z-index: 2; // au-dessus du dégradé
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+}
