@@ -1,44 +1,31 @@
 .dropdown {
-  width: 100%; 
-
-  &__header {
     width: 100%;
-    padding: 10px 20px 10px 15px;
-    background: #ff6060;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  &__arrow {
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-
-    &.open {
-      transform: rotate(180deg);
+    &__header {
+        width: 100%;
+        background: #FF6060;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', Arial, sans-serif;
     }
-  }
 
-  &__chevron {
-    width: 32px;
-    height: 32px;
-    display: block;
-  }
+    &__arrow {
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
 
-  &__content {
-    padding: 20px;
-    background: #F6F6F6;
-    border-radius: 0 0 5px 5px;
-    color: black;
-    font-size: 18px;
-    line-height: 1.6;
-  }
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        background: #F6F6F6;
+        border-radius: 0 0 5px 5px;
+    }
 }

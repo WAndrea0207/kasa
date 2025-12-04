@@ -3,7 +3,7 @@ import "./NotFound.scss";
 
 export default function NotFound() {
     return (
-        <main>
+        <main className="notfound">
             <h1>404</h1>
             <p>Désolé, la page que vous cherchez n'existe pas.</p>
             <p>
