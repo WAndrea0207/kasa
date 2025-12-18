@@ -22,23 +22,21 @@
 
 @media (max-width: 768px) {
   .home {
-    padding: 0 20px; // On réduit les marges sur les côtés
-    gap: 22px;       // On réduit l'espace entre la bannière et les cartes
+    padding: 0 20px; 
+    gap: 22px;       
     margin-top: 27px;
     margin-bottom: 27px;
   }
 
   .home__cards {
-    grid-template-columns: 1fr; // Une seule colonne (empilé)
-    padding: 0;                 // On enlève le padding interne du bloc gris
-    background: transparent;    // On enlève le fond gris (souvent le cas sur mobile pour Kasa)
+    grid-template-columns: 1fr; 
+    padding: 0;                 
+    background: transparent;   
     gap: 20px;  
     
           .card {
         height: 255px;
-    }// Espace plus petit entre les cartes
+    }
   }
-
-
     
 }
