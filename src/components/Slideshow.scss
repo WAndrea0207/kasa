@@ -38,3 +38,32 @@
         font-size: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    .slideshow {
+
+        &__counter {
+            display: none;
+        }
+
+
+        &__arrow {
+            width: 24px;
+            height: 24px;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+    
+            &--left {
+                left: 2px;
+            }
+            &--right {
+                right: 2px;
+            }
+        }
+    }
+}

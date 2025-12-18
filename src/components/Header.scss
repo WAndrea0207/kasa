@@ -30,19 +30,23 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 0 20px; // Donne une largeur naturelle de 335px sur un écran 375px
+    padding: 0 20px;
     margin-top: 20px;
 
     &__logo img {
-      height: 40px; // Réduit pour correspondre à la hauteur ~47px
+      height: 40px; 
     }
 
     &__nav {
-      gap: 20px; // Rapproche les liens
+      gap: 20px; 
 
       a {
-        font-size: 12px; // Taille standard mobile
-        text-transform: uppercase; // Souvent le cas sur mobile
+        font-size: 12px; 
+        text-transform: uppercase; 
+
+        &.active {
+        border-bottom: 1px solid black;
+      }
       }
     }
   }
