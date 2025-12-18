@@ -7,7 +7,7 @@ export default function NotFound() {
             <h1>404</h1>
             <p>Oups! La page que<span className="break-mobile">vous demandez n'existe pas.</span></p>
             <p>
-                <Link to="/">Retourer sur la page d'accueil</Link>
+                <Link to="/">Retourner sur la page d'accueil</Link>
             </p>
         </main>
     );
