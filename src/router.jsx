@@ -19,7 +19,7 @@ function RootLayout() {
 // Loader: Fetch product data before rendering
 async function productLoader({ params }) {
     try {
-        const response = await fetch('../public/products.json');
+        const response = await fetch('/products.json');
         const data = await response.json();
         const product = data.find(p => p.id === params.id);
 
@@ -29,7 +29,7 @@ async function productLoader({ params }) {
 
         return product;
     } catch (err) {
-        throw new Response(err, { status: 500 });
+        return redirect("/404");
     }
 }
 
@@ -41,6 +41,7 @@ const router = createBrowserRouter([
             { path: "", element: <Home /> },
             { path: "products/:id", element: <Product />, loader: productLoader },
             { path: "about", element: <About /> },
+            { path: "404", element: <NotFound /> },
             { path: "*", element: <NotFound /> }
         ],
     },

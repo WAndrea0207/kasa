@@ -28,3 +28,33 @@
         color: black;
     }
 }
+
+
+@media (max-width: 768px) {
+   .notfound {
+
+    gap: 113px;
+    margin: 113px 0px;
+
+   
+    h1 {
+        font-size: 96px;
+    }
+
+     p {
+        font-size: 18px;
+        width: 260px; 
+    line-height: 1.4;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .break-mobile {
+            display: block;
+        }
+
+    a {
+        font-size: 14px;
+    }
+}
+}

@@ -5,9 +5,9 @@ export default function NotFound() {
     return (
         <main className="notfound">
             <h1>404</h1>
-            <p>Désolé, la page que vous cherchez n'existe pas.</p>
+            <p>Oups! La page que<span className="break-mobile">vous demandez n'existe pas.</span></p>
             <p>
-                <Link to="/">Retour à l'accueil</Link>
+                <Link to="/">Retourer sur la page d'accueil</Link>
             </p>
         </main>
     );

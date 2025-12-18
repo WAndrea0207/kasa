@@ -17,3 +17,20 @@
     margin: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    height: 209px; // Hauteur cible
+    padding: 60px 20px; // Ajustement pour centrer visuellement
+    box-sizing: border-box;
+
+    &__logo {
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 12px; // Texte plus petit sur mobile
+      width: 130px; // Pour forcer le retour à la ligne si nécessaire comme sur la maquette
+    }
+  }
+}
