@@ -12,16 +12,29 @@
         justify-content: space-between;
         align-items: center;
         font-family: 'Montserrat', Arial, sans-serif;
+        position: relative;
+        z-index: 2;
     }
 
     &__arrow {
-        transition: transform 0.4s ease;
+        transition: transform 0.3s ease;
         display: flex;
         align-items: center;
+    }
 
-        &.open {
-            transform: rotate(-180deg);
-        }
+    &.open .dropdown__arrow {
+        transform: rotate(-180deg);
+    }
+
+    &__slider {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease; 
+    }
+
+    &.open .dropdown__slider {
+        max-height: 500px;
+        transition: max-height 1s ease; 
     }
 
     &__content {
