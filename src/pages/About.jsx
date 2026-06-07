@@ -1,4 +1,4 @@
-import "./About.scss";
+import "./about.scss";
 import Banner from "../components/Banner.jsx";
 import bannerAbout from "../assets/banner-about.webp";
 import Dropdown from "../components/Dropdown.jsx";
